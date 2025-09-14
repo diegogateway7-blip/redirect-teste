@@ -1,6 +1,6 @@
 export default function handler(req, res) {
   // CONFIGURAÇÃO - ALTERE AQUI
-  const PHONE = "551931672944"; // SEU NÚMERO
+  const PHONE = "551152863588"; // SEU NÚMERO
   
   // Capturar parâmetros
   const { fbclid, utm_source, utm_campaign, text } = req.query;
@@ -10,7 +10,7 @@ export default function handler(req, res) {
   
   // Adicionar parâmetros
   const params = [];
-  if (text) params.push(`text=${encodeURIComponent(text)}`);
+  if (text) params.push(`text=olá, quero fazer uma simulação.${encodeURIComponent(text)}`);
   if (fbclid) params.push(`fbclid=${encodeURIComponent(fbclid)}`);
   if (utm_source) params.push(`utm_source=${encodeURIComponent(utm_source)}`);
   if (utm_campaign) params.push(`utm_campaign=${encodeURIComponent(utm_campaign)}`);
